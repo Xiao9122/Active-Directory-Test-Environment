@@ -16,6 +16,26 @@ Built a Windows-based Active Directory test environment using Windows Server 201
 + Client Workstation: Client01 (192.168.20.11)
 + Internal virtual network configured for client-server communication
 
+### **Implemented Features**
++ Created and managed domain user accounts
++ Created department security groups (HR, IT, Accounting, Marketing, Legal)
++ Configured Organizational Units (OUs)
++ Joined Windows 11 clients to the domain
++ Configured DNS for Active Directory authentication
++ Created and secured departmental file shares
++ Applied group-based access control using security groups
++ Created users, password resets, account unlocks, and account disabling
++ Verified that domain users could successfully authenticate to the Active Directory domain and access network file shares based on assigned group permissions.
+
+### IP Address
+### Make sure your IP address is correct so it can connect to the internal network. Domain Controller: Directory (192.168.20.10) Client Workstation: Client01 (192.168.20.11)
+<img width="1277" height="938" alt="Screenshot 2026-06-09 001054" src="https://github.com/user-attachments/assets/b2b3cfd0-2819-478b-9b9f-10fc55987b61" />
+<img width="737" height="787" alt="Screenshot 2026-06-09 001109" src="https://github.com/user-attachments/assets/a52986a4-c608-48d5-a8ab-3d528cfd2855" />
+
+### Created department groups (HR, IT, Accounting, Marketing, Legal)
+<img width="1105" height="821" alt="Screenshot 2026-06-09 001755" src="https://github.com/user-attachments/assets/2e0f5a8a-5f3d-4abd-82a0-65689d10b079" />
+
+
 ### New Hire: Create user account
 Right click HR then click user, add new user and fill out the information
 <img width="795" height="547" alt="Screenshot 2026-06-08 194007" src="https://github.com/user-attachments/assets/1daaa52f-0be0-41a8-a803-1d48a1eb51e6" />
@@ -40,7 +60,7 @@ Right click HR then click user, add new user and fill out the information
 ### Try to open HR_General, Ashely does not have access to the file
 <img width="970" height="787" alt="Screenshot 2026-06-08 194441" src="https://github.com/user-attachments/assets/883d3f30-e560-4bb1-9de7-1af423b32d9b" />
 
-### Go back to Admin VM and go to Server Manager.
+### Go back to Admin VM and go to Server Manager
 <img width="1351" height="637" alt="Screenshot 2026-06-08 194516" src="https://github.com/user-attachments/assets/4cbc1064-a580-4385-8736-af626d74db8e" />
 
 ### Click task and create a new share. Press next twice and create share name. Cusomize permission and disable the inheritance. Remove both the Users so only SYSTEM, Admin, and CREATOR OWNER is in Principal. Lastly, Press Create. Then press Add, Select a principal and add Ashely Baker inside
@@ -54,6 +74,10 @@ Right click HR then click user, add new user and fill out the information
 ### Ashely cannot access other files since she does not have permission to do so, it could be for a different department
 <img width="958" height="767" alt="Screenshot 2026-06-08 194738" src="https://github.com/user-attachments/assets/08c6fc57-76d1-4ebd-85cb-8a1b5d77f74a" />
 
+
+#### Password Resets
+### You can reset a user's password anytime and give a temporary password for their next login. Right click the User's name and press password reset inside your Active Directory. Make sure the user's account is not disabled
+<img width="1116" height="641" alt="Screenshot 2026-06-08 234911" src="https://github.com/user-attachments/assets/d5090dae-a3ec-48ae-9814-43b5d5d979a2" />
 
 
 
