@@ -74,8 +74,11 @@ Right click HR then click user, add new user and fill out the information
 ### Ashely cannot access other files since she does not have permission to do so, it could be for a different department
 <img width="958" height="767" alt="Screenshot 2026-06-08 194738" src="https://github.com/user-attachments/assets/08c6fc57-76d1-4ebd-85cb-8a1b5d77f74a" />
 
+### Password Policy
+On Admin VM, Open Server Manager -> Tools -> Group Policy Management. Then expand Forest -> Domains -> mylab.local. Right click Default Domain Policy. Click edit and navigate to Computer Configuration -> Policies -> Windows Settings -> Account Policies -> Password Policy. Configure minimum password length to 8 and enable Password must meet complexity requirements
+<img width="942" height="850" alt="Screenshot 2026-06-09 004034" src="https://github.com/user-attachments/assets/67a241ee-9f31-4ef0-800b-f94b8d2fcaa5" />
 
-#### Password Resets
+### Password Resets
 ### You can reset a user's password anytime and give a temporary password for their next login. Right click the User's name and press password reset inside your Active Directory. Make sure the user's account is not disabled
 <img width="1116" height="641" alt="Screenshot 2026-06-08 234911" src="https://github.com/user-attachments/assets/d5090dae-a3ec-48ae-9814-43b5d5d979a2" />
 
